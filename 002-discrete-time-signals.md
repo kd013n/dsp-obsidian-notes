@@ -112,7 +112,8 @@ E = \displaystyle\sum_{n=-\infty}^{\infty} {\lvert x(n) \rvert}^2
 $$
 ##### Normalized power $(P)$ of $x(n)$
 $$\begin{gather}
-P = \lim_{L\to\infty} \frac{1}{N_{2}- N_{1}+ 1} \sum^{N_2}_{n=N_{1}} {\lvert x(n) \rvert}^{2}
+P = \lim_{L\to\infty} \frac{1}{N_{2}- N_{1}+ 1} \sum^{N_2}_{n=N_{1}} {\lvert x(n) \rvert}^{2} \\\\
+\text{where:} \\ N_{1} = \text{lower bound} \\ N_{2}= \text{upper bound} 
 \end{gather}$$
 
 
