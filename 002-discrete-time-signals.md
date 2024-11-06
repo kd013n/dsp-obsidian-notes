@@ -183,3 +183,38 @@ $$\begin{gather}
 P = \lim_{L\to\infty} \frac{1}{N_{2}- N_{1}+ 1} \sum^{N_2}_{n=N_{1}} {\lvert x(n) \rvert}^{2} \\\\
 \text{where:} \\ N_{1} = \text{lower bound} \\ N_{2}= \text{upper bound} 
 \end{gather}$$
+
+
+>[!example]+ Example 1
+>> [!abstract] Given
+>> $$ x(t) = \begin{cases}
+1 &; \; t \le 0 \\
+e^{-t} &; \; t \ge 0
+\end{cases}
+>>$$
+>
+>> [!done] Solution
+>> $$ \begin{gathered}
+\text{As an energy signal:} \\\\
+E = \lim_{L\to\infty} \int_{-L}^{L} [x(t)]^{2} \ dt \\\\
+E = \lim_{L\to\infty} \left\{ \int^{0}_{-L} [1]^{2}\ dt \; + \int^{L}_{0} [e^{-t}]^{2} \right\} \\\\
+E = \lim_{L\to\infty} \left\{ \int^{0}_{-L} dt \; + \int^{L}_{0} e^{-2t} \right\} \\\\
+E = \lim_{L\to\infty} \left\{ \left[t\right]_{-L}^{0} \; + \left[-\frac{1}{2} e^{-2t}\right]_{0}^{L}\right\} \\\\
+E = \lim_{L\to\infty} \left\{ \left[0-(-L)\right] \; + \left[-\frac{1}{2} e^{-2L} - \left(-\frac{1}{2} e^{-2(0)}\right)\right] \right\}\\\\
+E = \left[0-(-\infty)\right] \; + \left[-\frac{1}{2} e^{-\infty} - \left(-\frac{1}{2} e^{0}\right)\right]\\\\
+E = \infty \ + \ 0 \ + \ \frac{1}{2} \\\\
+\boxed{E = \infty} \\\\\\
+\text{As an power signal:} \\\\
+P = \lim_{L\to\infty} \frac{1}{2L} \int^{L}_{-L} [x(t)]^{2} \\\\
+P = \lim_{L\to\infty} \frac{1}{2L} \left\{ \int^{0}_{-L} [1]^{2}\ dt \; + \int^{L}_{0} [e^{-t}]^{2} \right\} \\\\
+P = \lim_{L\to\infty} \frac{1}{2L} \left\{ \int^{0}_{-L} dt \; + \int^{L}_{0} e^{-2t} \right\} \\\\
+P = \lim_{L\to\infty} \frac{1}{2L} \left\{ \left[t\right]_{-L}^{0} \; + \left[-\frac{1}{2} e^{-2t}\right]_{0}^{L}\right\} \\\\
+P = \lim_{L\to\infty} \frac{1}{2L} \left\{ \left[t\right]_{-L}^{0} \; + \left[-\frac{1}{2} e^{-2t}\right]_{0}^{L}\right\} \\\\
+P = \lim_{L\to\infty} \frac{1}{2L} \left\{ \left[0-(-L)\right] \; + \left[-\frac{1}{2} e^{-2L} - \left(-\frac{1}{2} e^{-2(0)}\right)\right] \right\} \\\\
+P = \lim_{L\to\infty} \frac{L}{2L} - \lim_{L\to\infty} \frac{e^{-2L}}{4L} +\lim_{L\to\infty} \frac{1}{4L} \\\\
+P = \frac{1}{2} - \frac{0}{\infty} + \frac{1}{\infty} \\\\
+P = \frac{1}{2} - 0 + 0 \\\\
+\boxed{P = \frac{1}{2}} \\\\\\
+\boxed{\therefore \text{The signal is a power signal since} \; P = \frac{1}{2}}
+\end{gathered}
+>$$
