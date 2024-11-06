@@ -57,8 +57,36 @@ $$
 \text{For } t = -3: \\
 2(-3) + 4 = -6 + 4 = -2 \\\\
 x(t) = \frac{t}{2} + 1 \\\\
-y(t) = -2 \left(\frac{2t+4}{2} + 1\right) \\
-y(t) = -2(t+2+1) \\
-y(t) = -2(t)
+y(t) = -2 \left[\frac{(2t+4)}{2} + 1\right] + 3 \\
+y(t) = -2(t+2+1) +3 \\
+y(t) = -2(t+3) +3 \\
+y(t) = -2t - 6 + 3 \\
+\boxed{y(t) = -2t - 3} \\\\\\
 \end{gather}
+$$
+$$
+\begin{gather}
+\text{@ } t: [-2, -1] \\\\
+\text{For } t = -1: \\
+2(-1) + 4 = -2 + 4 = 2 \\\\
+x(t) = 1 \\
+\boxed{y(t) = 1} \\\\\\
+\end{gather}
+$$
+$$
+\begin{gather}
+\text{@ } t: [-1, 0] \\\\
+\text{For } t = 0: \\
+2(0) + 4 = 4 \\\\
+x(t) = t - 4 \\\\
+y(t) = -2 [(2t + 4) - 4] + 3 \\
+y(t) = -2(2t) + 3 \\
+\boxed{y(t) = -4t + 3} \\\\\\
+\end{gather}
+$$
+$$
+y(t) = \begin{cases}
+
+\end{cases}
+
 $$
