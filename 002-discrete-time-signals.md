@@ -187,16 +187,15 @@ P = \lim_{L\to\infty} \frac{1}{N_{2}- N_{1}+ 1} \sum^{N_2}_{n=N_{1}} {\lvert x(n
 
 >[!example]+ Example 1
 >> [!abstract] Given
->> $$ x(t) = \begin{cases}
-1 &; \; t \le 0 \\
-e^{-t} &; \; t \ge 0
-\end{cases}
+>> $$ \begin{gather}
+x(t) = \left\{1, 0, -3, -2, 0, -2\right\}
+\end{gather}
 >>$$
 >
 >> [!done] Solution
 >> $$ \begin{gathered}
 \text{As an energy signal:} \\\\
-E = \lim_{L\to\infty} \int_{-L}^{L} [x(t)]^{2} \ dt \\\\
+E = \displaystyle\sum_{n=-\infty}^{\infty} {\lvert x(n) \rvert}^{2} \\\\
 E = \lim_{L\to\infty} \left\{ \int^{0}_{-L} [1]^{2}\ dt \; + \int^{L}_{0} [e^{-t}]^{2} \right\} \\\\
 E = \lim_{L\to\infty} \left\{ \int^{0}_{-L} dt \; + \int^{L}_{0} e^{-2t} \right\} \\\\
 E = \lim_{L\to\infty} \left\{ \left[t\right]_{-L}^{0} \; + \left[-\frac{1}{2} e^{-2t}\right]_{0}^{L}\right\} \\\\
