@@ -114,7 +114,24 @@ $$
 $$
 \begin{gather}
 \text{For } 2x[n+1]: \\
+x[n] = [\underset{\uparrow}{3},\ 3,\ 2, 1, 1] \\
+x[n + 1] = [3, 3, \underset{\uparrow}{2}, 1, 1] \\
+2x[n + 1] = [6, 6, \underset{\uparrow}{4}, 2, 2] \\
+\end{gather}
+$$
+$$
+\begin{gather}
+\text{For } x[-2n]: \\
+x[n] = [\underset{\uparrow}{3},\ 3,\ 2,\ 1,\ 1] \\
+x[-n] = [1,\ 1,\ 2,\ 3,\ \underset{\uparrow}{3}] \\
+x[-2n] = [1, 2, \underset{\uparrow}{3}] \\
+\end{gather}
+$$
+$$
+\begin{gather}
+\text{For } x[-2n]: \\
 x[n] = [\underset{\uparrow}{3}, 3, 2, 1, 1] \\
-x[n]
+x[-n] = [1, 1, 2, 3, \underset{\uparrow}{3}] \\
+x[-2n] = [2, 2, 4, 6, \underset{\uparrow}{6}] \\
 \end{gather}
 $$
