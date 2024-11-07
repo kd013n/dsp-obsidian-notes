@@ -204,8 +204,35 @@ P = \lim_{L\to\infty} \frac{1}{N_{2}- N_{1}+ 1} \sum^{N_2}_{n=N_{1}} [x(n)]^{2} 
 \text{where:} \\
 N_{1} =  -2 \\
 N_{2} = 3 \\\\
+P = \lim_{L\to\infty} \frac{1}{3 - (-2) + 1} \sum^{3}_{n = -2} [x(n)]^{2} \\\\
+P = \frac{1}{6}(18)\\\\
+\boxed{P = 3} \\\\\\
+\boxed{\therefore \text{Neither energy nor power signal since} \; E = 18 \ \text{and} \ P = 3}
+\end{gathered}
+>$$
+
+>[!example]+ Example 2
+>> [!abstract] Given
+>> $$ \begin{gather}
+x(t) = \left\{1,\ 0,\ \underset{\uparrow}{-3},\ -2,\ 0,\ -2\right\}
+\end{gather}
+>>$$
+>
+>> [!done] Solution
+>> $$ \begin{gathered}
+\text{As an energy signal:} \\\\
+E = \displaystyle\sum_{n=-\infty}^{\infty} [x(n)]^{2} \\\\
+E = (1)^{2} + (0)^{2} + (-3)^{2} + (-2)^{2} + (0)^{2} + (-2)^{2}\\\\
+E = 1 + 0 + 9 + 4 + 0 + 4 \\\\
+\boxed{E = 18} \\\\\\\\
+\text{As an power signal:} \\\\
 P = \lim_{L\to\infty} \frac{1}{N_{2}- N_{1}+ 1} \sum^{N_2}_{n=N_{1}} [x(n)]^{2} \\\\
-\boxed{P = \frac{1}{2}} \\\\\\
-\boxed{\therefore \text{The signal is a power signal since} \; P = \frac{1}{2}}
+\text{where:} \\
+N_{1} =  -2 \\
+N_{2} = 3 \\\\
+P = \lim_{L\to\infty} \frac{1}{3 - (-2) + 1} \sum^{3}_{n = -2} [x(n)]^{2} \\\\
+P = \frac{1}{6}(18)\\\\
+\boxed{P = 3} \\\\\\
+\boxed{\therefore \text{Neither energy nor power signal since} \; E = 18 \ \text{and} \ P = 3}
 \end{gathered}
 >$$
