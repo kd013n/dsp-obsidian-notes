@@ -122,7 +122,7 @@ E = \lim_{L\to\infty} \left[ -\frac{1}{2} e^{-2t} \right]_{0}^{L} \\\\
 E = \lim_{L\to\infty} \left\{-\frac{1}{2} e^{-2L} - \left( -\frac{1}{2} e^{-2(0)} \right)\right\} \\\\
 E = -\frac{1}{2} e^{-\infty} - \left( -\frac{1}{2} e^{0} \right)\\\\
 E = 0 - \left( -\frac{1}{2} \right) \\\\
-\boxed{E = \frac{1}{2}} \\\\\\\\
+\boxed{E = \frac{1}{2}} \\\\\\\\\\
 \text{As a power signal:} \\\\
 P = \lim_{L\to\infty} \frac{1}{2L} \int^{L}_{-L} [x(t)]^{2} \\\\
 P = \lim_{L\to\infty} \frac{1}{2L} \left\{ \int_{0}^{L} [e^{-t}]^{2}\ dt \; + \; \int_{-L}^{0} [0]^{2} \ dt \right\} \\\\
@@ -155,7 +155,7 @@ E = \lim_{L\to\infty} \left\{ \left[t\right]_{-L}^{0} \; + \left[-\frac{1}{2} e^
 E = \lim_{L\to\infty} \left\{ \left[0-(-L)\right] \; + \left[-\frac{1}{2} e^{-2L} - \left(-\frac{1}{2} e^{-2(0)}\right)\right] \right\}\\\\
 E = \left[0-(-\infty)\right] \; + \left[-\frac{1}{2} e^{-\infty} - \left(-\frac{1}{2} e^{0}\right)\right]\\\\
 E = \infty \ + \ 0 \ + \ \frac{1}{2} \\\\
-\boxed{E = \infty} \\\\\\
+\boxed{E = \infty} \\\\\\\\
 \text{As an power signal:} \\\\
 P = \lim_{L\to\infty} \frac{1}{2L} \int^{L}_{-L} [x(t)]^{2} \\\\
 P = \lim_{L\to\infty} \frac{1}{2L} \left\{ \int^{0}_{-L} [1]^{2}\ dt \; + \int^{L}_{0} [e^{-t}]^{2} \right\} \\\\
@@ -174,13 +174,13 @@ P = \frac{1}{2} - 0 + 0 \\\\
 #### Finite Sequence
 ##### Normalized energy $(E)$ of $x(n)$
 $$\begin{gather}
-E = \displaystyle\sum_{n=-\infty}^{\infty} {\lvert x(n) \rvert}^2
+E = \displaystyle\sum_{n=-\infty}^{\infty} [x(n)]^2
 \end{gather}
 $$
 
 ##### Normalized power $(P)$ of $x(n)$
 $$\begin{gather}
-P = \lim_{L\to\infty} \frac{1}{N_{2}- N_{1}+ 1} \sum^{N_2}_{n=N_{1}} {\lvert x(n) \rvert}^{2} \\\\
+P = \lim_{L\to\infty} \frac{1}{N_{2}- N_{1}+ 1} \sum^{N_2}_{n=N_{1}} [x(n)]^{2} \\\\
 \text{where:} \\ N_{1} = \text{lower bound} \\ N_{2}= \text{upper bound} 
 \end{gather}$$
 
@@ -188,19 +188,23 @@ P = \lim_{L\to\infty} \frac{1}{N_{2}- N_{1}+ 1} \sum^{N_2}_{n=N_{1}} {\lvert x(n
 >[!example]+ Example 1
 >> [!abstract] Given
 >> $$ \begin{gather}
-x(t) = \left\{1, 0, -3, -2, 0, -2\right\}
+x(t) = \left\{1,\ 0,\ \underset{\uparrow}{-3},\ -2,\ 0,\ -2\right\}
 \end{gather}
 >>$$
 >
 >> [!done] Solution
 >> $$ \begin{gathered}
 \text{As an energy signal:} \\\\
-E = \displaystyle\sum_{n=-\infty}^{\infty}  [x(n)]^{2} \\\\
+E = \displaystyle\sum_{n=-\infty}^{\infty} [x(n)]^{2} \\\\
 E = (1)^{2} + (0)^{2} + (-3)^{2} + (-2)^{2} + (0)^{2} + (-2)^{2}\\\\
 E = 1 + 0 + 9 + 4 + 0 + 4 \\\\
-\boxed{E = 18} \\\\\\
+\boxed{E = 18} \\\\\\\\
 \text{As an power signal:} \\\\
-P = \lim_{L\to\infty} \frac{1}{N_{2}- N_{1}+ 1} \sum^{N_2}_{n=N_{1}} {\lvert x(n) \rvert}^{2} \\\\
+P = \lim_{L\to\infty} \frac{1}{N_{2}- N_{1}+ 1} \sum^{N_2}_{n=N_{1}} [x(n)]^{2} \\\\
+\text{where:} \\
+N_{1} =  -2 \\
+N_{2} = 3 \\\\
+P = \lim_{L\to\infty} \frac{1}{N_{2}- N_{1}+ 1} \sum^{N_2}_{n=N_{1}} [x(n)]^{2} \\\\
 \boxed{P = \frac{1}{2}} \\\\\\
 \boxed{\therefore \text{The signal is a power signal since} \; P = \frac{1}{2}}
 \end{gathered}
