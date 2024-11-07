@@ -213,9 +213,11 @@ P = \frac{1}{6}(18)\\\\
 
 >[!example]+ Example 2
 >> [!abstract] Given
->> $$ \begin{gather}
-x(t) = \left\{1,\ 0,\ \underset{\uparrow}{-3},\ -2,\ 0,\ -2\right\}
-\end{gather}
+>> $$
+ x(t) = \begin{cases}
+5, &n \ge 0 \\
+0, &\text{otherwise}
+\end{cases}
 >>$$
 >
 >> [!done] Solution
