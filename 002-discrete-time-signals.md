@@ -1,3 +1,12 @@
+---
+tags:
+  - maths
+  - uni
+  - dsp
+  - notes
+  - data-comms
+date: 2024-11-05
+---
 ### Footnotes
  $e^{j \theta}=\cos(\theta)+j \sin(\theta)$
 $\lim(f(x))$

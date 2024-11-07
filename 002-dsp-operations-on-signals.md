@@ -1,3 +1,12 @@
+---
+tags:
+  - dsp
+  - uni
+  - data-comms
+  - maths
+  - exercise
+date: 2024-11-07
+---
 ## Item 1
 #### Given
 $$
