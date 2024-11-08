@@ -74,7 +74,7 @@ $$
 $$
 \begin{gather}
 \text{@ } t: [-3, -2] \\\\
-\text{For } t = -3: \\
+\text{For } t = -3 \text{ in } 2t+4: \\
 2(-3) + 4 = -6 + 4 = -2 \\\\
 x(t) = \frac{t}{2} + 1 \\\\
 y(t) = -2 \left[\frac{(2t+4)}{2} + 1\right] + 3 \\
@@ -87,7 +87,7 @@ $$
 $$
 \begin{gather}
 \text{@ } t: [-2, -1] \\\\
-\text{For } t = -1: \\
+\text{For } t = -1 \text{ in } 2t+4: \\
 2(-1) + 4 = -2 + 4 = 2 \\\\
 x(t) = 1 \\
 \boxed{y(t) = 1} \\\\\\
@@ -96,7 +96,7 @@ $$
 $$
 \begin{gather}
 \text{@ } t: [-1, 0] \\\\
-\text{For } t = 0: \\
+\text{For } t = 0 \text{ in } 2t+4: \\
 2(0) + 4 = 4 \\\\
 x(t) = t - 4 \\\\
 y(t) = -2 [(2t + 4) - 4] + 3 \\
@@ -125,7 +125,7 @@ $$
 \begin{gather}
 \text{For } 2x[n+1]: \\
 x[n] = [\underset{\uparrow}{3},\ 3,\ 2,\ 1,\ 1] \\
-x[n + 1] = [3,\ 3,\ \underset{\uparrow}{2},\ 1,\ 1] \\
+x[n + 1] = [3,\ \underset{\uparrow}{3},\ 2,\ 1,\ 1] \\
 2x[n + 1] = [6,\ \underset{\uparrow}{6},\ 4,\ 2,\ 2] \\
 \end{gather}
 $$
